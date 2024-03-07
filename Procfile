@@ -1,0 +1,1 @@
+web: gunicorn 'consent_app.wsgi'
