@@ -50,7 +50,7 @@ def post(request):
 
         # registering a external font in python
         pdfmetrics.registerFont(
-            TTFont('abc', 'Arial.ttf')
+            TTFont('abc', 'DejaVuSansMono-Bold.ttf')
         )
 
         # creating the title by setting it's font
