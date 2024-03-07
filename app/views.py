@@ -55,13 +55,15 @@ def post(request):
 
         # creating the title by setting it's font
         # and putting it on the canvas
-        pdf.setFont('abc', 36)
+        # pdf.setFont('abc', 36)
+        pdf.setFontSize(36)
         pdf.drawCentredString(300, 770, title)
+        pdf.setFontSize(14)
 
         # creating the subtitle by setting it's font,
         # colour and putting it on the canvas
         pdf.setFillColorRGB(0, 0, 255)
-        pdf.setFont("Courier-Bold", 24)
+        # pdf.setFont("Courier-Bold", 24)
 
         # drawing a line
         pdf.line(30, 710, 550, 710)
@@ -69,7 +71,7 @@ def post(request):
         # creating a multiline text using
         # textline and for loop
         text = pdf.beginText(40, 680)
-        text.setFont("Courier", 18)
+        # text.setFont("Courier", 18)
         text.setFillColor(colors.black)
         for line in textLines:
             text.textLine(line)
