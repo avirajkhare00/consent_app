@@ -12,6 +12,10 @@ from reportlab.lib import colors
 # Create your views here.
 
 
+def main(request):
+    return render(request, 'html/main.html')
+
+
 def index(request):
     return render(request, 'html/index.html')
 
